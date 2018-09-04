@@ -1,10 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, Linking, Button,} from 'react-native';
+import { StyleSheet, Text, View, Image, Linking, Button, ImageBackground} from 'react-native';
 import { createBottomTabNavigator } from 'react-navigation';
 
 class HomeScreen extends React.Component {
   render() {
     return (
+      <ImageBackground source={require('./trees.jpg')} style={{width: '100%', height: '100%', position: "absolute"}}>
+      
       <View style={styles.containerHome}>
         <Text style={styles.bigRed}>David Hoffmann</Text>
         <Button
@@ -21,6 +23,8 @@ class HomeScreen extends React.Component {
         />
     
       </View>
+      </ImageBackground>
+
     );
   }
 }
@@ -28,89 +32,93 @@ class HomeScreen extends React.Component {
 class PortfolioScreen extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
+      <ImageBackground source={require('./trees.jpg')} style={{width: '100%', height: '100%', position: "absolute"}}>
+
+      <View style={styles.containerHome}>
         <Text style={styles.bigRed}>Portfolio</Text>
 
-        <Text></Text>
+     
         <View style={{flex: 1, flexDirection: 'row'}}>
       
-        <Image
+      
+    <Text style={{color: '#ba2f30'}}
+      onPress={() => Linking.openURL('https://github.com/kc9gpj/Hangman')}>
+                <Image
           style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/jwR64t5.png'}}
         />
-    <Text style={{color: '#ba2f30'}}
-      onPress={() => Linking.openURL('https://github.com/kc9gpj/Hangman')}>
-               
       </Text>  
-      <Image
+     
+    <Text style={{color: '#ba2f30'}}
+      onPress={() => Linking.openURL('https://github.com/kc9gpj/StarWarsRPG')}>
+               <Image
           style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/CGTog6U.jpg'}}
         />
-    <Text style={{color: '#ba2f30'}}
-      onPress={() => Linking.openURL('https://github.com/kc9gpj/StarWarsRPG')}>
-             
       </Text> 
       </View> 
       <Text></Text>
         <View style={{flex: 1, flexDirection: 'row'}}>
-      <Image
-          style={{width: 150, height: 150, borderRadius: 15}}
-          source={{uri: 'https://i.imgur.com/VcUbtvC.jpg'}}
-        />
+    
        
     <Text style={{color: '#ba2f30'}}
       onPress={() => Linking.openURL('https://github.com/kc9gpj/TriviaGame')}>
-                
+                  <Image
+          style={{width: 150, height: 150, borderRadius: 15}}
+          source={{uri: 'https://i.imgur.com/VcUbtvC.jpg'}}
+        />
       </Text>  
-      <Image
+     
+    <Text style={{color: '#ba2f30'}}
+      onPress={() => Linking.openURL('https://github.com/kc9gpj/GifTastic')}>
+                 <Image
           style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/o1ef1LF.jpg'}}
         />
-    <Text style={{color: '#ba2f30'}}
-      onPress={() => Linking.openURL('https://github.com/kc9gpj/GifTastic')}>
-                
       </Text>
       </View>
-      <Text></Text>
+      
         <View style={{flex: 1, flexDirection: 'row'}}>
-      <Image
+     
+    <Text style={{color: '#ba2f30'}}
+      onPress={() => Linking.openURL('https://github.com/kc9gpj/TrainSchedule')}>
+                  <Image
           style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/KSYWvtv.png'}}
         />
-    <Text style={{color: '#ba2f30'}}
-      onPress={() => Linking.openURL('https://github.com/kc9gpj/TrainSchedule')}>
-                
       </Text>
-      <Image
+     
+    <Text style={{color: '#ba2f30'}}
+      onPress={() => Linking.openURL('https://github.com/kc9gpj/FoodSearch')}>
+                  <Image
           style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/JsGa604.png'}}
         />
-    <Text style={{color: '#ba2f30'}}
-      onPress={() => Linking.openURL('https://github.com/kc9gpj/FoodSearch')}>
-                
       </Text>
       </View>
-      <Text></Text>
+      
         <View style={{flex: 1, flexDirection: 'row'}}>
-      <Image
+     
+    <Text style={{color: '#ba2f30'}}
+      onPress={() => Linking.openURL('https://github.com/kc9gpj/dogfriendfinder')}>
+                <Image
           style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/wYSi9xN.png'}}
         />
-    <Text style={{color: '#ba2f30'}}
-      onPress={() => Linking.openURL('https://github.com/kc9gpj/dogfriendfinder')}>
-                
       </Text>
-      <Image
+     
+    <Text style={{color: '#ba2f30'}}
+      onPress={() => Linking.openURL('https://github.com/kc9gpj/burger')}>
+                 <Image
           style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/EmUhCtn.jpg'}}
         />
-    <Text style={{color: '#ba2f30'}}
-      onPress={() => Linking.openURL('https://github.com/kc9gpj/burger')}>
-                
       </Text>
     
     </View>
       </View>
+      </ImageBackground>
+
     );
   }
 }
@@ -121,9 +129,9 @@ export default createBottomTabNavigator({
 });
 
 const styles = StyleSheet.create({
+
   containerHome: {
     flex: 1,
-    backgroundColor: '#00c3b8',
     alignItems: 'center',
     justifyContent: 'center',
 
