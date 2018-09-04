@@ -30,72 +30,86 @@ class PortfolioScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.bigRed}>Portfolio</Text>
+
+        <Text></Text>
+        <View style={{flex: 1, flexDirection: 'row'}}>
+      
         <Image
-          style={{width: 50, height: 50, borderRadius: 15}}
+          style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/jwR64t5.png'}}
         />
     <Text style={{color: '#ba2f30'}}
       onPress={() => Linking.openURL('https://github.com/kc9gpj/Hangman')}>
-                Hangman 
+               
       </Text>  
       <Image
-          style={{width: 50, height: 50, borderRadius: 15}}
+          style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/CGTog6U.jpg'}}
         />
     <Text style={{color: '#ba2f30'}}
       onPress={() => Linking.openURL('https://github.com/kc9gpj/StarWarsRPG')}>
-                Star Wars 
-      </Text>  
+             
+      </Text> 
+      </View> 
+      <Text></Text>
+        <View style={{flex: 1, flexDirection: 'row'}}>
       <Image
-          style={{width: 50, height: 50, borderRadius: 15}}
+          style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/VcUbtvC.jpg'}}
         />
+       
     <Text style={{color: '#ba2f30'}}
       onPress={() => Linking.openURL('https://github.com/kc9gpj/TriviaGame')}>
-                Trivia 
+                
       </Text>  
       <Image
-          style={{width: 50, height: 50, borderRadius: 15}}
+          style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/o1ef1LF.jpg'}}
         />
     <Text style={{color: '#ba2f30'}}
       onPress={() => Linking.openURL('https://github.com/kc9gpj/GifTastic')}>
-                Giftastic
+                
       </Text>
+      </View>
+      <Text></Text>
+        <View style={{flex: 1, flexDirection: 'row'}}>
       <Image
-          style={{width: 50, height: 50, borderRadius: 15}}
+          style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/KSYWvtv.png'}}
         />
     <Text style={{color: '#ba2f30'}}
       onPress={() => Linking.openURL('https://github.com/kc9gpj/TrainSchedule')}>
-                Train Scheduler
+                
       </Text>
       <Image
-          style={{width: 50, height: 50, borderRadius: 15}}
+          style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/JsGa604.png'}}
         />
     <Text style={{color: '#ba2f30'}}
       onPress={() => Linking.openURL('https://github.com/kc9gpj/FoodSearch')}>
-                Food Search
+                
       </Text>
+      </View>
+      <Text></Text>
+        <View style={{flex: 1, flexDirection: 'row'}}>
       <Image
-          style={{width: 50, height: 50, borderRadius: 15}}
+          style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/wYSi9xN.png'}}
         />
     <Text style={{color: '#ba2f30'}}
       onPress={() => Linking.openURL('https://github.com/kc9gpj/dogfriendfinder')}>
-                Dog Friend Finder
+                
       </Text>
       <Image
-          style={{width: 50, height: 50, borderRadius: 15}}
+          style={{width: 150, height: 150, borderRadius: 15}}
           source={{uri: 'https://i.imgur.com/EmUhCtn.jpg'}}
         />
     <Text style={{color: '#ba2f30'}}
       onPress={() => Linking.openURL('https://github.com/kc9gpj/burger')}>
-                Eat-Da-Burger
+                
       </Text>
     
-    
+    </View>
       </View>
     );
   }
@@ -109,7 +123,7 @@ export default createBottomTabNavigator({
 const styles = StyleSheet.create({
   containerHome: {
     flex: 1,
-    backgroundColor: '#12aeac',
+    backgroundColor: '#00c3b8',
     alignItems: 'center',
     justifyContent: 'center',
 
